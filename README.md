@@ -1,2 +1,2 @@
-# https://jeovabah.github.io/InnovarteSup/
+# https://innovartesup.netlify.app/
 Projeto Innovarte
