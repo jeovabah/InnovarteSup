@@ -177,9 +177,6 @@ function displayCart(){
         Object.values(cartItems).map(item => {
             productContainer.innerHTML += ` <div class="product"><ion-icon name="close-circle" class="close"></ion-icon> <img src="./midia/${item.tag}.jpeg"> <span style="border-right:4px solid black">${item.name}</span> 
             </div>
-            <div class="price"> 
-                <span>R$${item.price} </span>
-            </div>
             <div class="quantity">
                 <ion-icon class="decrease "
                 name="arrow-dropleft-circle"> </ion-icon>
