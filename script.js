@@ -224,6 +224,7 @@ function enviarMensagem(){
     if( cartItems && productContainer ) {
         productContainer.innerHTML = "";
         Object.values(cartItems).map(item => {
+           
             
          /*var texto = `Pedido: ${item.name}
 ------------
@@ -234,14 +235,16 @@ quantidade: ${item.inCart}`;
     window.open("https://api.whatsapp.com/send?phone=" + "5585991039732" + "&text=" + texto, "_blank"); */
             var texto=`Pedido: ${item.name}
 .
-Preço: R$${item.price}`
+Preço: R$${item.price}, Total: R$${cartCost}`
 var cost = `  Preço: ${cartCost} `
     productContainer.innerHTML+= `
     <div class="div-enviar">
-     <p>Pedidos:${item.name + "-------" + "R$"+item.price}</p>
+     <p>Pedido: ${item.name + ", " + "R$"+item.price}</p>
      <a class="btn-send" target="_blank" href='https://api.whatsapp.com/send?phone=5585991039732&text="${texto}"'>Prosseguir para o <i class="fab fa-whatsapp"></i></a>
      </div>
      `
+
+            
         });
 
     }

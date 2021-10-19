@@ -465,5 +465,12 @@ td img {
 	position:relative;
 	top:1px;
 }
+.obs {
+    color: gray;
+    margin-bottom: 15px;
+    font-weight: bold;
+    width: 300px;
+    margin: 15px auto;
+}
      
 
