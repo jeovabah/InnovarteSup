@@ -1,6 +1,6 @@
 let carts = document.querySelectorAll(".buy-cart");
 const btn = document.querySelector("#send")
-
+var btnRefresh =document.getElementById("#refresh"); 
 let products = [
     {
         name: "Whey Protein Isolado",
@@ -175,14 +175,12 @@ function displayCart(){
     if( cartItems && productContainer ) {
         productContainer.innerHTML = "";
         Object.values(cartItems).map(item => {
-            productContainer.innerHTML += ` <div class="product"><ion-icon name="close-circle" class="close"></ion-icon> <img src="./midia/${item.tag}.jpeg"> <span style="border-right:4px solid black">${item.name}</span> 
+            productContainer.innerHTML += ` <div class="product"> <img src="./midia/${item.tag}.jpeg"> <span style="border-right:4px solid black">${item.name}</span> 
             </div>
             <div class="quantity">
-                <ion-icon class="decrease "
-                name="arrow-dropleft-circle"> </ion-icon>
+                
                 <span>${item.inCart}</span>
-                <ion-icon class="increase"
-                name="arrow-dropright-circle"></ion-icon>  
+                  
             </div>
             <div class="total"> 
                 R$${item.inCart * item.price}
@@ -235,13 +233,13 @@ quantidade: ${item.inCart}`;
     texto=window.encodeURIComponent(texto);
     window.open("https://api.whatsapp.com/send?phone=" + "5585991039732" + "&text=" + texto, "_blank"); */
             var texto=`Pedido: ${item.name}
----------
-preço: R$${cartCost} `
+.
+Preço: R$${item.price}`
 var cost = `  Preço: ${cartCost} `
     productContainer.innerHTML+= `
     <div class="div-enviar">
      <p>Pedidos:${item.name + "-------" + "R$"+item.price}</p>
-     <a class="btn-send" target="_blank" href='https://api.whatsapp.com/send?phone="5585991039732&text="${item.name}"'>Prosseguir para o <i class="fab fa-whatsapp"></i></a>
+     <a class="btn-send" target="_blank" href='https://api.whatsapp.com/send?phone=5585991039732&text="${texto}"'>Prosseguir para o <i class="fab fa-whatsapp"></i></a>
      </div>
      `
         });
@@ -272,7 +270,10 @@ function setName (product){
      localStorage.setItem("nameInCart", JSON.stringify(cartItems));
  }
  
-  
+  function cartZero(){
+        localStorage.clear();
+        location.reload();
+  }
 
 
 displayCart();
