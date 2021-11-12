@@ -45,51 +45,51 @@ let products = [
         inCart:0
     },
     {
-        name: "Whey Protein Isolado",
-        tag:"wheyisolado",
-        price:50,
+        name: "Whey profit Isolate Protein Mix",
+        tag:"wheyprofit",
+        price:90,
         inCart:0
     },
     {
-        name: "Whey Protein Isolado",
-        tag:"wheyisolado",
-        price:50,
+        name: "Creatina Max Titanium 300g",
+        tag:"creatina300g",
+        price:115,
         inCart:0
     },
     {
-        name: "Whey Protein Isolado",
-        tag:"wheyisolado",
-        price:50,
+        name: "Creatina Vitafor 300g",
+        tag:"creatinaVitafor",
+        price:90,
         inCart:0
     },
     {
-        name: "Whey Protein Isolado",
-        tag:"wheyisolado",
-        price:50,
+        name: "Creatina Black Skull 300g",
+        tag:"creatinaBlack",
+        price:67,
         inCart:0
     },
     {
-        name: "Whey Protein Isolado",
-        tag:"wheyisolado",
-        price:50,
+        name: "Max Titanium 2 Hot 200g",
+        tag:"2hot",
+        price:95,
         inCart:0
     },
     {
-        name: "Whey Protein Isolado",
-        tag:"wheyisolado",
-        price:50,
+        name: "Pre-Workout Horus 150g",
+        tag:"horus",
+        price:95,
         inCart:0
     },
     {
-        name: "Whey Protein Isolado",
-        tag:"wheyisolado",
-        price:50,
+        name: "Pre-Workout Diabo Verde 150g",
+        tag:"diaboVerde",
+        price:80,
         inCart:0
     },
     {
-        name: "Whey Protein Isolado",
-        tag:"wheyisolado",
-        price:50,
+        name: "Dakness Badseed",
+        tag:"darknessBad",
+        price:95,
         inCart:0
     }
 

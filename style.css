@@ -472,5 +472,89 @@ td img {
     width: 300px;
     margin: 15px auto;
 }
-     
+.c-container .c-section {
+    width: 50%;
+    display: flex;
+}
+.c-span {
+    text-align: center;
+}
+.c-text a {
+    text-decoration: none;
+    color: #555;
+}
+.c-text {
+    padding-bottom: 12px;
+    padding-right: 12px;
+    text-align: center;
+    
+}
+.c-text #c-whey {
+    padding-right: 10px;
+    padding-left: 10px;
+    background: rgba(172, 255, 47, 0.7);
+    font-size: 150%;
+    border-radius: 5px;
+    border: solid 1px #555;
+}
+.c-text #c-creatina {
+    padding-right: 15px;
+    padding-left: 15px;
+    background: rgba(172, 255, 47, 0.7);
+    font-size: 150%;
+    border-radius: 5px;
+    border: solid 1px #555;
+}
+ .c-text #c-whey {
+    background: rgba(172, 255, 47, 0.7);
+    font-size: 150%;
+    border-radius: 5px;
+    border: solid 1px #555;
+}
+.c-text #c-workout {
+    background: rgba(172, 255, 47, 0.7);
+    font-size: 150%;
+    border-radius: 5px;
+    border: solid 1px #555;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.c-text #c-colageno {
+    background: rgba(172, 255, 47, 0.7);
+    font-size: 150%;
+    border-radius: 5px;
+    border: solid 1px #555;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.c-text #c-pasta {
+    padding-right: 15px;
+    padding-left: 15px;
+    background: rgba(172, 255, 47, 0.7);
+    font-size: 150%;
+    border-radius: 5px;
+    border: solid 1px #555;
+} 
+@media only screen and (max-width: 475px) {
+    .c-container .c-section {
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+    }
+}
 
+
+@media only screen and (max-width: 1060px) {
+.c-container .c-section {
+    flex-direction: column;
+    width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1920px) {
+    .c-container .c-section {
+        align-items: center;
+        width: 100%;
+    }
+}
+    

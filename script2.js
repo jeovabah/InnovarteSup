@@ -3,27 +3,27 @@ const btn = document.querySelector("#send")
 var btnRefresh =document.getElementById("#refresh"); 
 let products = [
     {
-        name: "Whey Protein Isolado",
-        tag:"wheyisolado",
-        price:135,
+        name: "Max Titanium L-G",
+        tag:"maxLG",
+        price:90,
         inCart:0
     },
     {
-        name: "Whey Protein Concentrado ",
-        tag:"wheyproteinconcentrado",
-        price:175,
+        name: "Max Titanium BCAA Drink 280g",
+        tag:"maxBcaa",
+        price:85,
         inCart:0
     },
     {
-        name: "Top Whey 3w +Performance",
-        tag:"topwhey3w",
-        price:167,
+        name: "Colagen PowderMax 300g",
+        tag:"colagenBodyShape",
+        price:55,
         inCart:0
     },
     {
-        name: "Top whey 3W +Sabor",
-        tag:"topwhey3wsabor",
-        price:167,
+        name: "Full life Colágeno life 300g",
+        tag:"fullLifeColageno",
+        price:55,
         inCart:0
     },
     {
